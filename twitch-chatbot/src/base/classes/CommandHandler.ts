@@ -10,7 +10,7 @@ export default class CommandHandler implements ICommandHandler {
         this.client = client;
     }
 
-    Execute(commandName: string, tags: ChatUserstate, args: string[]): Promise<[string]> | void {
+    Execute(commandName: string, tags: ChatUserstate, args: string[]): Promise<any> | void {
         const command: Command = this.client.commands.get(commandName)!;
 
         if (!command) return this.client.say(this.client.config.watchedChannel, `Command \`${commandName}\` not found.`);

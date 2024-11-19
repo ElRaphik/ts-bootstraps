@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "rm -rf build",
-    "dev": "nodemon src/index.ts",
+    "dev": "pnpm build && nodemon src/index.ts",
     "start": "pnpm clean && pnpm build && node build/index.js"
   },
   "keywords": [],

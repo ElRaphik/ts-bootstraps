@@ -24,7 +24,7 @@ export default class Command implements ICommand {
         this.dev = options.dev;
     }
 
-    Execute(args: string[]): void {
+    Execute(args: any[]): void | Promise<void> {
         // This method should be overridden by specific command implementations
         throw new Error("Method 'execute' must be implemented.");
     }
