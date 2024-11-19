@@ -4,8 +4,10 @@
     "oauthRedirectUrl": "https://localhost:3000",
     "userAccessToken": "<USER_ACCESS_TOKEN>",
     "refreshToken": "<REFRESH_TOKEN>",
+
     "watchedChannel": "<WATCHED_CHANNEL>",
     "botUsername": "<BOT_USERNAME>",
+    "prefix" :"!",
 
     "devUserIds": [
         "elraphik"
