@@ -30,7 +30,7 @@ export default class Message extends Event {
             }
 
             try {
-                await this.client.commandHandler.Execute(commandArg.slice(this.client.config.prefix.length), tags, args)
+                await this.client.commandHandler.Execute(commandName, tags, args)
             } catch (err) {
                 console.error(err);
             }
